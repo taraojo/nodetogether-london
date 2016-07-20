@@ -7,8 +7,7 @@ const pickOne = require('pick-one');
 
 const app = express();
 
-app.get('/hello', function (request, response) {
-    console.log('request to /hello');
+app.get('/', function (request, response) {
     var motivator = pickOne(motivations);
     response.send(motivator);
 });
