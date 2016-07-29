@@ -7,6 +7,8 @@ const pickOne = require('pick-one');
 
 const app = express();
 
+app.use(express.static('./app/public'));
+
 app.engine('handlebars', eHandlebars({
       defaultLayout: 'main',
       layoutsDir:'./app/views/layouts'
