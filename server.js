@@ -1,6 +1,6 @@
 //SERVER ADDRESS - building a client server relationship
 // check for heroku port and host values
-const port = process.env.PORT || '8000';
+const port = process.env.PORT || '3000';
 const host = process.env.HOST || '0.0.0.0';
 const Express = require('express');
 
