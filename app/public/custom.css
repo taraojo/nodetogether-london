@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,600);
+
+body {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.motivation {
+    text-align: center;
+    color: #ffffff;
+    align-items: center;
+}
