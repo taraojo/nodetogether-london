@@ -17,9 +17,16 @@ app.engine('handlebars', eHandlebars({
 app.set('views', './app/views');
 app.set('view engine', 'handlebars');
 
+var catImages = [
+    'http://grimaemilia.neocities.org/images/cat%20in%20space.jpg',
+    'http://www.winterbluemusic.com/wp-content/uploads/2016/05/Space-Cat-Wallpaper.jpg',
+    'https://i.ytimg.com/vi/HWWWE0ygidc/maxresdefault.jpg',
+    'http://www.ngepluk.com/p/funny-space-cat-wallpaper-for-android-t0q.jpg'
+];
+
 app.get('/', function (request, response) {
     var motivation = pickOne(motivations);
-    response.render('motivation', { motivation: motivation });
+    response.render('motivation', { motivation: motivation, image: pickOne(catImages) });
 });
 
 module.exports = app;
